@@ -1,2 +1,2 @@
 # python_3
-To lrean python is to do python
+To learn python is to do python
