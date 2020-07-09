@@ -1,0 +1,10 @@
+mport requests
+
+with open("spis_stron.txt", "r", encoding="UTF-8") as file:
+    for web_page in file:
+        #print(web_page.replace("\n", "")) dla debugowania
+        response = str(requests.get(web_page.replace("\n", "")))
+        if response == "<Response [200]>":
+            #print(web_page) DLA DEBUGOWANIA
+           with open("strony_istniejace.txt", "a") as file:
+                file.write(web_page)
